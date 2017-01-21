@@ -22,8 +22,8 @@ while True:
     # Grab the X, Y, Z components from the reading and print them out.
     accel_x, accel_y, accel_z = accel
     mag_x, mag_z, mag_y = mag
-    pitch = math.atan(accel_x / math.sqrt(accel_y^2 + accel_z^2))
-    roll = math.atan(accel_y / math.sqrt(accel_x^2 + accel_z^2))
+    pitch = math.atan(accel_x / math.sqrt(accel_y**2 + accel_z**2))
+    roll = math.atan(accel_y / math.sqrt(accel_x**2 + accel_z**2))
     print('Accel X={0}, Accel Y={1}, Accel Z={2}, Mag X={3}, Mag Y={4}, Mag Z={5}, Pitch={6}, Roll={7}'.format(
           accel_x, accel_y, accel_z, mag_x, mag_y, mag_z, pitch, roll))
     # Wait half a second and repeat.
